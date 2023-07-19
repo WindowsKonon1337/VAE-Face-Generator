@@ -12,11 +12,11 @@ class Encoder(nn.Module):
         
         self.conv = nn.Sequential(
             nn.Conv2d(3, 8, kernel_size),
-            nn.ReLU(),
             nn.BatchNorm2d(8),
-            nn.Conv2d(8, 16, kernel_size),
             nn.ReLU(),
+            nn.Conv2d(8, 16, kernel_size),
             nn.BatchNorm2d(16),
+            nn.ReLU(),
             nn.Conv2d(16, 32, kernel_size),
             nn.ReLU(),
         )
@@ -66,12 +66,12 @@ class Decoder(nn.Module):
         self.unflatten = nn.Unflatten(unflattened_size=(32, final_conv_size, final_conv_size), dim=1)
 
         self.decoder_conv = nn.Sequential(
-            nn.ConvTranspose2d(32, 16, kernel_size),
-            nn.ReLU(),
+            nn.ConvTranspose2d(32, 16, kernel_size), 
             nn.BatchNorm2d(16),
-            nn.ConvTranspose2d(16, 8, kernel_size),
             nn.ReLU(),
+            nn.ConvTranspose2d(16, 8, kernel_size),
             nn.BatchNorm2d(8),
+            nn.ReLU(),
             nn.ConvTranspose2d(8, 3, kernel_size),
             nn.ReLU()
         )

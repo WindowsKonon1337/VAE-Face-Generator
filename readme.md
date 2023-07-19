@@ -21,6 +21,6 @@ Drag .pth file in `model` folder
 
 ## Launch
 
-```python
-    python3 ./server/server.py
+```bash
+    python3 ./server/server.py --filepath=\<path to .pth file\> --port=\<port. Default: 8080\>
 ```
