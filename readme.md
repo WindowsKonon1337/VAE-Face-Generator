@@ -14,7 +14,7 @@ available from torchvision.datasets
 
 ## Network weights: 
 
-Model weights availabe [here](https://cloud.mail.ru/public/ephV/K6y6B2BZ3)
+Model weights availabe [here](https://cloud.mail.ru/public/z9p7/UXhmfWAJa)
 
 Drag .pth file in `model` folder
 
