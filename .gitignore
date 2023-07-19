@@ -2,3 +2,4 @@ celeba*
 data
 copy*
 *.pth
+__*
