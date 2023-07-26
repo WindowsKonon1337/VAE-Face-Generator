@@ -16,8 +16,6 @@ available from torchvision.datasets
 
 Model weights availabe [here](https://cloud.mail.ru/public/z9p7/UXhmfWAJa)
 
-Drag .pth file in `model` folder
-
 ## Launch
 
 ```bash
